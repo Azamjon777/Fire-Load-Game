@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_2"
+    tools:context=".start.MainActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/fruit1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_3"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Score: 0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/to_third_game_btn"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_1"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Third game"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_2"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

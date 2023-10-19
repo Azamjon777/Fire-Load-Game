@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/casino_game"
+        android:name="vavi.asloi.nacuri.first_game.CasinoGameFragment"
+        tools:layout="@layout/fragment_casino_game">
+        <action
+            android:id="@+id/action_casino_game_to_rulesFragment"
+            app:destination="@id/rulesFragment" />
+        <action
+            android:id="@+id/action_casino_game_to_thirdGameFragment"
+            app:destination="@id/thirdGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="vavi.asloi.nacuri.start.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_casino_game"
+            app:destination="@id/casino_game" />
+    </fragment>
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="vavi.asloi.nacuri.second_game.RulesFragment"
+        android:label="fragment_rules"
+        tools:layout="@layout/fragment_rules">
+        <action
+            android:id="@+id/action_rulesFragment_to_secondGameFragment"
+            app:destination="@id/secondGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondGameFragment"
+        android:name="vavi.asloi.nacuri.second_game.SecondGameFragment"
+        android:label="SecondGameFragment">
+        <action
+            android:id="@+id/action_secondGameFragment_to_casino_game"
+            app:destination="@id/casino_game" />
+        <action
+            android:id="@+id/action_secondGameFragment_to_thirdGameFragment"
+            app:destination="@id/thirdGameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdGameFragment"
+        android:name="molqu.alpani.cxipan.second_game.ThirdGameFragment"
+        android:label="ThirdGameFragment" />
+</navigation>
